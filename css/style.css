@@ -1,0 +1,411 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #203348;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Modificar las fuentes */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* globales */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+  background: transparent;
+}
+
+h1 {
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+h2 {
+  font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+p {
+  background: transparent;
+  color: #e1e1e1;
+}
+/* header y navegacion */
+
+.contenedor {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.nav-principal a {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.btn {
+  background-color: rgb(226, 14, 14);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  border: 0.3rem solid rgb(0, 0, 0);
+  border-radius: 0.8rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn:hover {
+  color: #e1e1e1;
+}
+
+.hero {
+  background-image: url(../images/portada.jpeg);
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 49rem;
+  }
+}
+
+.informacion {
+  background: linear-gradient(to top, #203348 0%, rgb(226, 14, 14) 100%);
+
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .informacion {
+    padding: 10rem 0;
+  }
+}
+
+.form-newslatter {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .form-newslatter {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 88%);
+  letter-spacing: 0.5rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 88%);
+    letter-spacing: 2rem;
+    padding: 0.5rem;
+    font-size: 4rem;
+  }
+}
+.texto {
+  color: #e1e1e1;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .texto {
+    color: #e1e1e1;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 2rem;
+}
+.tranparente {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: #203348;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 0.3rem solid white;
+}
+@media (min-width: 768px) {
+  .tranparente {
+    background: white;
+    color: #203348;
+    width: 40rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: 0.3rem solid white;
+  }
+}
+
+::placeholder {
+  color: #203348;
+  text-align: center;
+}
+.ajuste {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+.btn-form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(167, 196, 230);
+  color: #203348;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-align: center;
+  border: 0.1rem solid #203348;
+  border-radius: 2rem;
+  margin-left: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .btn-form {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(167, 196, 230);
+    color: #203348;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: 0.3rem solid #000;
+    border-radius: 2rem;
+    margin: 2rem;
+  }
+}
+
+/* venta de los articulos */
+.venta {
+  padding: 3rem 3rem;
+}
+.ps4 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .ps4 {
+    margin-bottom: 0;
+  }
+}
+
+.ps4 img {
+  width: 100%;
+}
+.ps4 a {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.text-ventas {
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.ps4 a:hover {
+  background-color: #26babd;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .listado-ventas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Informacion del juego  */
+
+.sobre-ps4 {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      #203348 50%,
+      rgb(226, 14, 14) 100%
+    ),
+    url(../images/center.jpeg);
+  background-position: center, top center;
+  background-repeat: no-repeat;
+  background-size: 100%, 80rem;
+}
+
+@media (min-width: 768px) {
+  .sobre-ps4 {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #203348 50%,
+        rgb(226, 14, 14) 100%
+      ),
+      url(../images/center.jpeg);
+    background-position: right top;
+    padding: 1rem 0;
+    background-size: 100%, 110rem;
+  }
+}
+@media (min-width: 1100px) {
+  .sobre-ps4 {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #203348 50%,
+        rgb(226, 14, 14) 100%
+      ),
+      url(../images/center.jpeg);
+    background-position: left top;
+    padding: 1rem 0;
+    background-size: 100%, 110rem;
+  }
+}
+@media (min-width: 1440px) {
+  .sobre-ps4 {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #203348 50%,
+        rgb(226, 14, 14) 100%
+      ),
+      url(../images/center.jpeg);
+    background-position: left top;
+    padding: 1rem 0;
+    background-size: 100%, 110rem;
+  }
+}
+
+.sobre-ps4-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .sobre-ps4-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    column-gap: 15rem;
+  }
+}
+
+.caracteristicas {
+  grid-row: 2 / 3;
+  text-align: center;
+  color: #e1e1e1;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .caracteristicas {
+    grid-column: 2 / 3;
+  }
+}
+
+/* Footer */
+
+.side-footer {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  color: #e1e1e1;
+}
+.side-footer h3 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .side-footer h3 {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    color: #e1e1e1;
+  }
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.grid-footer > div {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-footer > div {
+    margin: 0rem;
+  }
+}
+
+.footer-menu a {
+  display: block;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-menu a {
+    text-align: left;
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 5rem;
+}
